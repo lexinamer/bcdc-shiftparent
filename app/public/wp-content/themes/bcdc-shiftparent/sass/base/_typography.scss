@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800,800i,900,900i');
+
+@mixin font($color, $fontsize, $fontweight) {
+  font-family: 'Muli', sans-serif;
+  color: $color;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+}
+
+h1{
+  @include font(
+    $light-color,
+    30px,
+    900);
+}
+
+h2{
+  @include font(
+    $dark-color,
+    25px,
+    800);
+}
+
+h3{
+  @include font(
+    $dark-color,
+    20px,
+    700);
+}
+
+p{
+  @include font(
+    $dark-color,
+    16px,
+    400);
+}

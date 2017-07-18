@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
