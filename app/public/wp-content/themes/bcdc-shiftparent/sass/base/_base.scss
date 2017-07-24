@@ -1,6 +1,6 @@
-html {
+body {
   box-sizing: border-box;
-  padding: 0 10px;
+  margin: 0;
 }
 
 .clearfix {
@@ -9,4 +9,15 @@ html {
     display: table;
     clear: both;
   }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  padding-left: 25px;
+}
+
+li {
+  padding-bottom: 15px;
 }

@@ -1,36 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900');
 
-@mixin font($color, $fontsize, $fontweight) {
+body {
   font-family: 'Muli', sans-serif;
-  color: $color;
-  font-size: $fontsize;
-  font-weight: $fontweight;
+  color: $dark-color;
 }
 
-h1{
-  @include font(
-    $light-color,
-    30px,
-    900);
+// Main Page Header
+h1 {
+  color: $light-color;
+  font-weight: 900;
+  text-align: center;
 }
 
-h2{
-  @include font(
-    $dark-color,
-    25px,
-    800);
+// Callout Text
+h2 {
+  color: $secondary-color;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
 }
 
-h3{
-  @include font(
-    $dark-color,
-    20px,
-    700);
+// Section Headings
+h3 {
+  font-weight: 700;
 }
 
-p{
-  @include font(
-    $dark-color,
-    16px,
-    400);
+// Button text
+h4 a {
+  color: $light-color;
+  background: $secondary-color;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
 }
+
+// Accordion Titles
+.accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accordion-title{
+  color: $dark-color;
+  background: $tertiary-color;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.accordion-title:focus{
+  outline: none;
+}
+
+.accordion-content{
+  color: $dark-color;
+  background: $tertiary-color;
+  text-decoration: none;
+  // position: relative;
+  // bottom: 15px;
+}
+
+// .accordion-content p {
+//   margin: 0;
+//   padding: 10px;
+// }

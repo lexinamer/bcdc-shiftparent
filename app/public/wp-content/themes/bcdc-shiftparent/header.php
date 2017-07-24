@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="header">
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 				wp_nav_menu( array(
@@ -26,6 +26,9 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
+
+		<?php the_title( '<h1>', '</h1>' ); ?>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
