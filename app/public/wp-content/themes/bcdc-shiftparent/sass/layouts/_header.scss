@@ -1,0 +1,10 @@
+// header styling
+.header{
+  background: $primary-color;
+  width: 100%;
+  height: 200px;
+  -webkit-clip-path: ellipse(90% 100% at 50% 0%);
+  clip-path: ellipse(90% 100% at 50% 0%);
+  position: relative;
+  z-index: 2;
+}

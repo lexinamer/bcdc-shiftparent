@@ -1,0 +1,26 @@
+// Btns Base for both click and accordion
+%button{
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 1em auto;
+  box-shadow: 0px 2px 4px $dark-color;
+}
+
+
+// Click Btns
+h4 a {
+  @extend %button;
+  @include colors($light-color, $secondary-color);
+}
+
+// Clinic Btns
+h5 a {
+  @extend %button;
+  @include colors($primary-color, $light-color);
+}

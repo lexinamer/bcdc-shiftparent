@@ -12,3 +12,9 @@ $dark-color: #012F48;
 
 // Backgrounds, headers
 $light-color: #FDFDFD;
+
+// Color Mixin
+@mixin colors($color, $bgcolor) {
+  color: $color;
+  background: $bgcolor;
+}

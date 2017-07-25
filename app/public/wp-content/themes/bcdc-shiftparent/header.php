@@ -18,17 +18,24 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="header">
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+
+		<a href="<?php echo site_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i></a>
+
+		<i class="opennav fa fa-bars" aria-hidden="true"></i>
 
 		<?php the_title( '<h1>', '</h1>' ); ?>
 
 	</header><!-- #masthead -->
+
+	<nav id="site-navigation" class="main-navigation">
+		<i class="closenav fa fa-times" aria-hidden="true"></i>
+		<h1>Quick Find</h1>
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+		?>
+	</nav><!-- #site-navigation -->
 
 	<div id="content" class="site-content">

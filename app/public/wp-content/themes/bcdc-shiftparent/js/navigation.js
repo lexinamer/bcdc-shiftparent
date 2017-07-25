@@ -4,6 +4,18 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
+
+const nav = document.querySelector('nav');
+
+document.querySelector('.opennav').addEventListener("click", function(){
+	nav.style.left = "0";
+});
+
+document.querySelector('.closenav').addEventListener("click", function(){
+	nav.style.left = "100%";
+});
+
+
 ( function() {
 	var container, button, menu, links, i, len;
 

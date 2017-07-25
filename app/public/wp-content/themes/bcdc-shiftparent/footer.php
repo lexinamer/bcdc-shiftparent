@@ -14,16 +14,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<section class="footer_content">
+			<?php the_field('footer_content'); ?>
+		</section>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bcdc-shiftparent' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bcdc-shiftparent' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bcdc-shiftparent' ), 'bcdc-shiftparent', '<a href="https://automattic.com/">Lexi Namer</a>' );
-			?>
+			Footer content here
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,0 +1,47 @@
+.accordion {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.accordion-title {
+  @extend %button;
+  @include colors($dark-color, $tertiary-color);
+  font-size: 1em;
+  text-align: left;
+  width: auto;
+}
+
+.accordion-title:after {
+  content: '\25BE';
+  float: right;
+  font-size: 25px;
+  margin-top: -8px;
+  transition: 0.2s;
+}
+
+.accordion-title.open {
+  box-shadow: 0px 2px 4px white;
+;
+}
+
+
+.accordion-title.open:after {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.accordion-title:focus {
+  outline: none;
+}
+
+.accordion-content {
+  @include colors($dark-color, $tertiary-color);
+  position: relative;
+  bottom: 20px;
+
+  p {
+    margin: 0;
+    padding: 1em;
+  }
+}
