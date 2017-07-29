@@ -1,16 +1,23 @@
 .fa {
-  font-size: 30px;
+  font-size: 30px !important;
   color: $dark-color;
   padding: 10px;
   cursor: pointer;
+
+  &:hover {
+    color: $light-color;
+  }
 }
 
 .fa-bars {
   float: right;
 }
 
-// .page-icon {
-//   text-align: center;
-//   color: $tertiary-color;
-//   font-size: 9em;
-// }
+.page-icon {
+  display: none;
+  height: 80px;
+  width: auto;
+  margin: 0 auto;
+  // transform: rotate(-35deg);
+  padding: 10px;
+}

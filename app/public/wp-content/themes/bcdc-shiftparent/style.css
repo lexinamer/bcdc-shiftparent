@@ -11,7 +11,6 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  width: 90%;
   padding-left: 25px; }
 
 li {
@@ -48,6 +47,16 @@ p {
   font-size: 1em;
   padding: 0 10px; }
 
+a {
+  color: #012F48;
+  border-bottom: 3px solid #35B9C7;
+  text-decoration: none; }
+  a:hover {
+    color: #35B9C7; }
+
+.accordion-content a:hover {
+  color: #FDFDFD; }
+
 h4 a, h5 a, .accordion-title, .menu li a {
   font-weight: 600;
   font-size: 1em;
@@ -58,11 +67,15 @@ h4 a, h5 a, .accordion-title, .menu li a {
   width: 60%;
   text-align: center;
   margin: 1em auto;
-  box-shadow: 0px 2px 4px #012F48; }
+  box-shadow: 0px 2px 4px #012F48;
+  border-bottom: none; }
 
 h4 a {
   color: #FDFDFD;
   background: #AF4A8C; }
+  h4 a:hover {
+    color: #FDFDFD;
+    background: #8f025e; }
 
 h5 a {
   color: #35B9C7;
@@ -87,7 +100,7 @@ h5 a {
   transition: 0.2s; }
 
 .accordion-title.open {
-  box-shadow: 0px 2px 4px white; }
+  box-shadow: none; }
 
 .accordion-title.open:after {
   -webkit-transform: rotate(-180deg);
@@ -101,19 +114,29 @@ h5 a {
   color: #012F48;
   background: #EEA339;
   position: relative;
-  bottom: 20px; }
+  bottom: 23px; }
   .accordion-content p {
     margin: 0;
-    padding: 1em; }
+    padding: 1em;
+    padding-top: 0; }
 
 .fa {
-  font-size: 30px;
+  font-size: 30px !important;
   color: #012F48;
   padding: 10px;
   cursor: pointer; }
+  .fa:hover {
+    color: #FDFDFD; }
 
 .fa-bars {
   float: right; }
+
+.page-icon {
+  display: none;
+  height: 80px;
+  width: auto;
+  margin: 0 auto;
+  padding: 10px; }
 
 nav {
   height: 100%;
@@ -141,6 +164,9 @@ nav h1 {
   color: #FDFDFD;
   background: #AF4A8C;
   width: 90%; }
+  .menu li a:hover {
+    color: #FDFDFD;
+    background: #8f025e; }
 
 .header {
   background: #35B9C7;
@@ -167,7 +193,10 @@ footer {
     margin: 0 auto; }
 
   h4 a, h5 a {
-    width: 70%; } }
+    width: 70%; }
+
+  .page-icon {
+    display: block; } }
 @media (min-width: 1024px) {
   .site-content {
     position: relative;

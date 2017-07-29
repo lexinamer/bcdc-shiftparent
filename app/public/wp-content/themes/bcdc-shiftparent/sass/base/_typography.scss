@@ -43,5 +43,15 @@ p {
 
 // Links
 a {
+  color: $dark-color;
+  border-bottom: 3px solid $primary-color;
+  text-decoration: none;
 
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.accordion-content a:hover {
+  color: $light-color;
 }

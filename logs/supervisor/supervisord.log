@@ -32,3 +32,6 @@
 2017-07-23 18:20:22,013 INFO exited: varnish-plugins-watcher (exit status 0; expected)
 2017-07-23 18:20:23,019 INFO spawned: 'varnish-plugins-watcher' with pid 765
 2017-07-23 18:20:24,023 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2017-07-29 14:38:17,434 INFO exited: varnish-plugins-watcher (exit status 0; expected)
+2017-07-29 14:38:18,439 INFO spawned: 'varnish-plugins-watcher' with pid 1051
+2017-07-29 14:38:19,442 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

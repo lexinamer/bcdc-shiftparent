@@ -29,4 +29,9 @@ nav h1{
   @extend %button;
   @include colors($light-color, $secondary-color);
   width: 90%;
+
+  &:hover{
+    color: $light-color;
+    background: #8f025e;
+  }
 }

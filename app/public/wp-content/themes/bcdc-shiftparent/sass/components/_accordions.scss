@@ -20,8 +20,7 @@
 }
 
 .accordion-title.open {
-  box-shadow: 0px 2px 4px white;
-;
+  box-shadow: none;
 }
 
 
@@ -38,10 +37,11 @@
 .accordion-content {
   @include colors($dark-color, $tertiary-color);
   position: relative;
-  bottom: 20px;
+  bottom: 23px;
 
   p {
     margin: 0;
     padding: 1em;
+    padding-top: 0;
   }
 }
