@@ -1,3 +1,65 @@
 2017/07/16 13:59:33 Using in-memory storage
 2017/07/16 13:59:33 [SMTP] Binding to address: 0.0.0.0:1025
 2017/07/16 13:59:33 Serving under http://:1080/
+2017/07/30 14:59:34 [SMTP [::1]:49020] Starting session
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 16 bytes: 'EHLO localhost\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: ESTABLISH] In ESTABLISH state
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 21 bytes: '250-Hello localhost\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 16 bytes: '250-PIPELINING\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 35 bytes: 'MAIL FROM:<www-data@7490afd2c5c7>\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@7490afd2c5c7>
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@7490afd2c5c7>'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] In MAIL state
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 37 bytes: '250 Sender www-data@7490afd2c5c7 ok\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] In RCPT state
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] Got RCPT command
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 6 bytes: 'DATA\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] Processing line: DATA
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] In RCPT state
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: RCPT] Got DATA command, switching to DATA state
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 737 bytes: 'To: dev-email@flywheel.local\r\nSubject: [bcdc-shiftparent] Notice of Email Change\r\nX-PHP-Originating-Script: 501:class-phpmailer.php\r\nDate: Sun, 30 Jul 2017 14:59:34 +0000\r\nFrom: WordPress <wordpress@bcdc-shiftparent.dev>\r\nMessage-ID: <953816e3c61dfcba40bc94580e5d4207@bcdc-shiftparent.dev>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHi admin,\r\n\r\nThis notice confirms that your email was changed on bcdc-shiftparent.\r\n\r\nIf you did not change your email, please contact the Site Administrator at\r\ndev-email@flywheel.local\r\n\r\nThis email has been sent to dev-email@flywheel.local\r\n\r\nRegards,\r\nAll at bcdc-shiftparent\r\nhttp://bcdc-shiftparent.dev\r\n\r\n.\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2017/07/30 14:59:34 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [bcdc-shiftparent] Notice of Email Change
+X-PHP-Originating-Script: 501:class-phpmailer.php
+Date: Sun, 30 Jul 2017 14:59:34 +0000
+From: WordPress <wordpress@bcdc-shiftparent.dev>
+Message-ID: <953816e3c61dfcba40bc94580e5d4207@bcdc-shiftparent.dev>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hi admin,
+
+This notice confirms that your email was changed on bcdc-shiftparent.
+
+If you did not change your email, please contact the Site Administrator at
+dev-email@flywheel.local
+
+This email has been sent to dev-email@flywheel.local
+
+Regards,
+All at bcdc-shiftparent
+http://bcdc-shiftparent.dev
+'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Storing message WkN69oRj32nlsklBD6Nax7RBtK_4WVUCXyb3lGXkRgY=@mailhog.example
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 80 bytes: '250 Ok: queued as WkN69oRj32nlsklBD6Nax7RBtK_4WVUCXyb3lGXkRgY=@mailhog.example\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Received 6 bytes: 'QUIT\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] Processing line: QUIT
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2017/07/30 14:59:34 [SMTP [::1]:49020] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2017/07/30 14:59:34 [SMTP [::1]:49020] Sent 9 bytes: '221 Bye\r\n'
+2017/07/30 14:59:34 [SMTP [::1]:49020] Session ended

@@ -13,6 +13,8 @@
 
 	</div><!-- #content -->
 
+	<div class="footer-bubble"></div>
+
 	<footer id="colophon" class="site-footer">
 		<section class="footer_content">
 			<?php the_field('footer_content'); ?>

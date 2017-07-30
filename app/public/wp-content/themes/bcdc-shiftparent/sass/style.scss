@@ -27,6 +27,7 @@
 
   .page-icon {
     display: block;
+    height: 60px;
   }
 }
 
@@ -44,15 +45,26 @@
     padding: 3em 0;
   }
 
+  .page-icon {
+    height: 80px;
+  }
+
   .footer_content {
     width: 65%;
     margin: 0 auto;
+  }
+
+  .footer-bubble {
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
   }
 
   #page {
     background: url('imgs/background.png');
     background-size: contain;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
   }
 }
