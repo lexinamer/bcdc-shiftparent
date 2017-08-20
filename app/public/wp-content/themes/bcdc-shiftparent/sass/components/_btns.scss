@@ -11,6 +11,7 @@
   margin: 1em auto;
   box-shadow: 0px 2px 4px $dark-color;
   border-bottom: none;
+  cursor: pointer;
 }
 
 
@@ -29,4 +30,8 @@ h4 a {
 h5 a {
   @extend %button;
   @include colors($primary-color, $light-color);
+
+  &:hover{
+    color: $secondary-color;
+  }
 }

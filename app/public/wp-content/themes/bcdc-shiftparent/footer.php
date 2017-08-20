@@ -18,7 +18,10 @@
 	<footer id="colophon" class="site-footer">
 		<section class="footer_content">
 			<?php the_field('footer_content'); ?>
+			<h5><a href="#">find a clinic</a></h5>
 		</section>
+
+
 		<div class="site-info">
 			Footer content here
 		</div><!-- .site-info -->
@@ -26,6 +29,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

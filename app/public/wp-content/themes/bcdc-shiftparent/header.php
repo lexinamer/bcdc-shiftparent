@@ -21,6 +21,8 @@
 
 		<a href="<?php echo site_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i></a>
 
+		<?php the_custom_logo();?>
+
 		<i class="opennav fa fa-bars" aria-hidden="true"></i>
 
 		<?php the_title( '<h1>', '</h1>' ); ?>

@@ -44,14 +44,14 @@ p {
 // Links
 a {
   color: $dark-color;
-  border-bottom: 3px solid $primary-color;
+  border-bottom: 3px solid $secondary-color;
   text-decoration: none;
 
   &:hover {
-    color: $primary-color;
+    color: $secondary-color;
   }
 }
 
-.accordion-content a:hover {
-  color: $light-color;
-}
+// .accordion-content a:hover {
+//   color: $light-color;
+// }

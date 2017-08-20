@@ -49,13 +49,10 @@ p {
 
 a {
   color: #012F48;
-  border-bottom: 3px solid #35B9C7;
+  border-bottom: 3px solid #AF4A8C;
   text-decoration: none; }
   a:hover {
-    color: #35B9C7; }
-
-.accordion-content a:hover {
-  color: #FDFDFD; }
+    color: #AF4A8C; }
 
 h4 a, h5 a, .accordion-title, .menu li a {
   font-weight: 600;
@@ -68,7 +65,8 @@ h4 a, h5 a, .accordion-title, .menu li a {
   text-align: center;
   margin: 1em auto;
   box-shadow: 0px 2px 4px #012F48;
-  border-bottom: none; }
+  border-bottom: none;
+  cursor: pointer; }
 
 h4 a {
   color: #FDFDFD;
@@ -80,6 +78,8 @@ h4 a {
 h5 a {
   color: #35B9C7;
   background: #FDFDFD; }
+  h5 a:hover {
+    color: #AF4A8C; }
 
 .accordion {
   width: 95%;
@@ -127,6 +127,9 @@ h5 a {
   cursor: pointer; }
   .fa:hover {
     color: #FDFDFD; }
+
+header a {
+  border-bottom: none; }
 
 .fa-bars {
   float: right; }
