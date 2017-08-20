@@ -17,19 +17,28 @@
 
 	<footer id="colophon" class="site-footer">
 		<form class="gender-form">
-			<h3>Want information more specific to your child?</h3>
+			<h3 class="gender-header">Want information more specific to your child?</h3>
 
-			<select class="mychild">
-				<option value="girl">girl</option>
-				<option value="boy">boy</option>
-			</select>
+			<div>
+				<span>My child is a </span>
+				<select class="mychild">
+					<option value="girl">girl</option>
+					<option value="boy">boy</option>
+				</select>
+			</div>
 
-			 <select class="loveinterest">
-				<option value="girls">girls</option>
-				<option value="boys">boys</option>
-				<option value="unsure">unsure</option>
-			</select>
-			<button type="button">Submit</button>
+			<div>
+				<span>and they are interested in </span>
+			 	<select class="loveinterest">
+					<option value="girls">girls</option>
+					<option value="boys">boys</option>
+					<option value="unsure">unsure</option>
+				</select>
+			</div>
+
+			<div>
+				<button type="button"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+			</div>
 		</form>
 
 		<section class="footer_content">

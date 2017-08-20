@@ -140,6 +140,44 @@ header a {
   margin: 0 auto;
   padding: 10px; }
 
+.gender-form {
+  margin-bottom: 3em; }
+
+.gender-header {
+  font-size: 1.5em;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: white; }
+
+.gender-form div {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 1.1em; }
+
+.gender-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+  border: none;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 0;
+  border-bottom: 3px dashed white;
+  text-align-last: center;
+  width: 60px; }
+  .gender-form select:focus {
+    outline: none; }
+
+.gender-form button {
+  background: none;
+  border: none; }
+  .gender-form button:focus {
+    outline: none; }
+
 nav {
   height: 100%;
   width: 100%;
